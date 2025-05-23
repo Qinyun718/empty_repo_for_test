@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CRM Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CRM Dashboard</h1>
+    <div id="stats">
+        <p>Total Contacts: <span id="total-contacts">0</span></p>
+    </div>
+    <div id="add-contact">
+        <h2>Add Contact</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+    <h2>Contact List</h2>
+    <table id="contact-table">
+        <thead>
+            <tr><th>Name</th><th>Email</th></tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
